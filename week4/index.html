@@ -7,15 +7,34 @@
 
     <body>
         <!-- Thia is an html comment -->
+        <!-- 
+            shift will indent - shift + tab will indent backwards.
+            cmd/ctrl + left/right arrows move to start and end of the line
+            cmd/ctrl _ up/down arrows move to the start or end of page.
+            shift + cmd/ctrl + left/right arrows select to the strt end of the line .
+            shift + up/down arrows select per line 
+        -->
         <!-- Site header -->
         <header>
             <!-- h1 is the most important heading -->
-        <h1> reggies coffee shop</h1>
+            <h1> reggies coffee shop</h1>
+
+          <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>   
+            </ul>
+            </nav>
+
         </header>
         <!-- starting the main content of th epage -->
         <main>
+            <!-- adding an on page link -->
+            <a href="#treatofweek">Treat of the Week</a>
             <article>
                 <h2>Our story </h2>
+                <!-- adding an image -->
+                <img src="images/coffee-shop.jpg" title="coffee cup on a pile of coffee beans" alt="coffee cup on a pile of coffee beans.">
             <p> 
                 we are <em> family owned buisiness</em> Reggies is the <abbr title="Chief executive officer ">CEO</abbr> and head barista of the shop.
                 Maria is the pastry chef .
@@ -51,7 +70,7 @@
                 </ol>
             </section>
             <!-- adding section for a description list.-->
-            <section>
+            <section id="treatofweek">
                 <h3> Treat of the week </h3>
                 <dl>
                     <dt> Name </dt>
@@ -73,6 +92,9 @@
                         </ul>
                     </dd>
                 </dl>
+                <!-- adding an external link -->
+                <a href="https://natashaskitchen.com/banana-bread-recipe-video/"
+                target="_blank">Get the Recipe</a>
             </section>
         </main>
         <!-- Site footer-->
