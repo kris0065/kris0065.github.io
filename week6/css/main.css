@@ -5,6 +5,8 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
     color: darkcyan;
+    /* adding background image */
+    background-image: url(../images/white_brick_wall.png);
 }
 
 h1{
@@ -25,15 +27,26 @@ nav ul{
 
 nav ul a {
     color: darkslategray;
-    text-decoration: none;
+    text-decoration: none
+    font-size: 1.5rem;
+    /* 1.5 rem =1.5 x 16px */
 }
 
-/* selecting element with id value  */
-#treatoftheweek {
-    background-color: cadetblue;
-}
 #treatofweek {
-    background-color: darkgrey;
+     /* color image repeat position-x position-y */
+    background: grey url(../images/bread.jpg);
+    background-size: cover;
+    
+    font-size: 1.25rem;
+
+    padding: 1em;
+    /* 1 x 20px=20px */
+
+
+    /* viewport based units  */
+    /*width: 100rw  */
+    /* scroll wheel because it has space coming from the parent. it goes out of the screen 
+    which is not ideal */
 }
 
 .blue-link {
