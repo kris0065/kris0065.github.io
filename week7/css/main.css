@@ -3,12 +3,27 @@
     shortcut for adding comment is ctrl/cmd + /
 */
 body{
+    padding-top: 92px;
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
     color: darkcyan;
     /* adding background image */
     background-image: url(../images/white_brick_wall.png);
 }
-
+/* box model example */
+section p{
+    width: 50%;
+/* single value + top bottom left and right, 2 values equals first value i stop / bottom and second value is left and right  */
+    padding: 1em 0.5em;
+    /* top right bottom left  */
+    margin: 1em 2em 2em 2em;
+    border-bottom: 2px solid black;
+}
+.container {
+    /* always create a container for every body tag */
+    max-width: 1200px;
+    /* top/bottom and left/right  */
+    margin: 0 auto;
+}
 h1{
     color: cadetblue;
 }
@@ -25,7 +40,15 @@ nav ul{
     list-style: none;
 }
 
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
 nav ul a {
+    display: block;
     color: darkslategray;
     text-decoration: none
     font-size: 1.5rem;
@@ -47,9 +70,19 @@ nav ul a {
     /*width: 100rw  */
     /* scroll wheel because it has space coming from the parent. it goes out of the screen 
     which is not ideal */
+    position: relative;
+}
+
+.blue-link.large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .blue-link {
+    /* em=1.5times the font size  */
+    padding: 1.5em;
+    width: 300px;
     background-color:darkslategray;
     color: antiquewhite;
     text-decoration: none;
@@ -58,7 +91,21 @@ nav ul a {
 .large-text {
     font-size: 20px;
 }
+article,aside {
+    width: 80%;
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+aside {
+    width: 20%;
+}
 
+section {
+    clear: both;
+}
 .white-text {
     color: antiquewhite;
 }
@@ -97,6 +144,16 @@ h3~p {
 }
 [src$=".jpg"] {
     border: 4px solid darkslategrey;
+}
+
+/* fixed navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 /* Psuedo Classes */
 /* styling navigation */
