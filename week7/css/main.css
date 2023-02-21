@@ -1,0 +1,174 @@
+/* 
+    this is a css comment
+    shortcut for adding comment is ctrl/cmd + /
+*/
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color: darkcyan;
+    /* adding background image */
+    background-image: url(../images/white_brick_wall.png);
+}
+
+h1{
+    color: cadetblue;
+}
+
+p{
+    background-color: antiquewhite;
+}
+/*selecting multiple elements */
+h1, h2, h3, h4, {
+    text-decoration: underline;
+}
+/* selecting child elements with multiple levels  */
+nav ul{
+    list-style: none;
+}
+
+nav ul a {
+    color: darkslategray;
+    text-decoration: none
+    font-size: 1.5rem;
+    /* 1.5 rem =1.5 x 16px */
+}
+
+#treatofweek {
+     /* color image repeat position-x position-y */
+    background: grey url(../images/bread.jpg);
+    background-size: cover;
+    
+    font-size: 1.25rem;
+
+    padding: 1em;
+    /* 1 x 20px=20px */
+
+
+    /* viewport based units  */
+    /*width: 100rw  */
+    /* scroll wheel because it has space coming from the parent. it goes out of the screen 
+    which is not ideal */
+}
+
+.blue-link {
+    background-color:darkslategray;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 20px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* 
+    COMBINATORS 
+    direct child selector -will only select child of the parent 
+ */
+
+article>p {
+    font-size: 24px;
+    font-weight:bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/* adjecent sibling selector - selects the element if any of it exists  */
+
+h3+ul {
+    border: 1px solid black;
+}
+
+h3~p {
+    text-transform: uppercase;
+}
+
+/* Attribute Selectors */
+[href="#treatofweek"] {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+[src="./images/coffee-shop.jpg"] {
+    border: 4px solid darkslategray;
+}
+[src$=".jpg"] {
+    border: 4px solid darkslategrey;
+}
+/* Psuedo Classes */
+/* styling navigation */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /*  */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black
+}
+
+/*  Position selectors */
+/* first-child and last-child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+/* styling table */
+table {
+    border-collapse: collapse;
+}
+
+/* nth child selector -even/odd */
+/* hex color value with 6 charecters */
+tbody tr:nth-child(even) {
+    background-color: royalblue;
+}
+
+/*  using nth child with n  */
+/*  where n is 0,1,2,3   until number elements */
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+}
+
+/* using a formula with the nth-child selector */
+table td:nth-child(2n+1) {
+    background-color:rgba(0,0,0,0.2);
+}
+/* 
+    css specificity
+    formula: in-line style, ID, Class, Tag-Name (0,0,0,0)
+*/
+/* (0,0,0,1) */
+footer {
+    background-color: aqua;
+}
+
+body footer {
+    background-color: orange;
+}
+.site-footer {
+    background-color: antiquewhite;
+}
+
+article h2 {
+    text-transform: uppercase;
+}
+footer.site-footer {
+    background-color: #d5836c;
+}
