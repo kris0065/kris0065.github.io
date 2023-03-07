@@ -1,0 +1,192 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #d5e9a9;
+  }
+  
+  /* Header section styles */
+  header {
+    position: relative;
+  }
+  
+  header img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+  }
+  
+  /* Main content section styles */
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Article section styles */
+  article {
+    flex-basis: 60%1;
+    margin-right: 20px;
+  }
+  
+  article img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  
+  /* Sidebar section styles */
+  aside {
+    flex-basis: 30%;
+  }
+  
+  /* types section styles */
+  aside h2 {
+    margin-bottom: 10px;
+  }
+  
+  aside ul {
+    list-style-type:armenian;
+    margin-left: 0;
+  }
+  
+  aside li {
+    margin-bottom: 5px;
+  }
+  
+  /* Contact form section styles */
+  form {
+    margin-top: 20px;
+    border: 1px solid #fdfbfb;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  form h2 {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  form textarea {
+    height: 150px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  .article-image {
+    float: left;
+    margin-right: 20px;
+}
