@@ -130,3 +130,7 @@ body {
     display: inline-block;
     vertical-align: text-bottom;
   }
+button {
+    box-sizing: border-box;
+    box-shadow: #0069d9;
+}

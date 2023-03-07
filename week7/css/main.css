@@ -229,3 +229,6 @@ article h2 {
 footer.site-footer {
     background-color: #d5836c;
 }
+button {
+    box-sizing: border-box;
+}
