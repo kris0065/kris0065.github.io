@@ -93,6 +93,28 @@ p {
     text-transform: uppercase;
 }
 
+/* navigation */
+.nav-list li {
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+/* love hate */
+.nav-list a,
+.nav-list a:link
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color:#00add8;
+    color: inherit;
+}
+
+/* mobile app section */
 .btn {
     text-decoration: none;
     display: inline-block;
@@ -106,7 +128,16 @@ p {
     background-color: #00add8;
     color: inherit;
 }
-
+/* action section */
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    font-size: 1.5rem;
+}
 /* footer styles */
 .site-footer {
     margin-top: 20px;
@@ -143,7 +174,18 @@ p {
     .banner h1 {
         color: white;
     }
-
+/* navigation */
+    .nav-list {
+        display: flex;
+    }
+    .nav-list li {
+        flex: 1;
+        border: none;
+        border-right: 1px solid grey;
+    }
+    .nav-list li:last-child {
+        border: none;
+    }
     /* mobile app section  */
     .app img {
         width: 40%;
@@ -153,4 +195,13 @@ p {
     .app .btn {
         float: right;
     }
+}
+
+/* **************************************
+        MEDIA QUERY 800PX
+******************************************* */
+@media screen and (min-width:800px){
+    .actions-list li (
+        max-width: 20%;
+    )
 }
