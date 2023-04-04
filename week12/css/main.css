@@ -1,0 +1,25 @@
+/* 
+font-family: 'Passero One', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+/* to embed a map first go to google, find the place your gonna select, hit share, embed map and copy html */
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
